@@ -43,18 +43,18 @@
 // 16,4 -> кратно
 
 
-Console.Clear();
-Console.WriteLine("Введите число x:");
-int x=Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число y:");
-int y=Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.WriteLine("Введите число x:");
+// int x=Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число y:");
+// int y=Convert.ToInt32(Console.ReadLine());
 
-if (x%y==0)
-{
-     Console.WriteLine($"Число x={x} кратно y={y}");
-}
-else 
- Console.WriteLine($"Число x={x} не кратно y={y} и остаток от деления равен {x%y}");
+// if (x%y==0)
+// {
+//      Console.WriteLine($"Число y={y} кратно x={x}");
+// }
+// else 
+//  Console.WriteLine($"Число x={x} не кратно y={y} и остаток от деления равен {x%y}");
 
 
 
@@ -63,6 +63,20 @@ else
 // 14 -> нет
 // 46 -> нет
 // 161 -> да
+
+Console.Clear();
+Console.WriteLine("Введите число x:");
+int x=Convert.ToInt32(Console.ReadLine());
+if (x%7==0 && x%23==0)
+{
+     Console.WriteLine($"Число x={x} кратно 7 и 23");
+}
+else 
+ Console.WriteLine($"Число x={x} не кратно 7 и 23");
+
+
+
+
 
 
 

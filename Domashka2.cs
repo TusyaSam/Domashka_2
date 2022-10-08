@@ -82,25 +82,25 @@
 // 8,9 -> нет
 
 
-Console.Clear();
-Console.WriteLine("Введите число x:");
-int x=Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число y:");
-int y=Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.WriteLine("Введите число x:");
+// int x=Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число y:");
+// int y=Convert.ToInt32(Console.ReadLine());
 
-if (x*x==y)
-{
-    Console.WriteLine($"Число x={x} является квадратом y={y}");
-}
-else if (y*y==x)
-{
-     Console.WriteLine($"Число y={y} является квадратом x={x}");
-}
+// if (x*x==y)
+// {
+//     Console.WriteLine($"Число x={x} является квадратом y={y}");
+// }
+// else if (y*y==x)
+// {
+//      Console.WriteLine($"Число y={y} является квадратом x={x}");
+// }
 
-else 
-{
-Console.WriteLine($"Числа x={x} и y={y} не являются квадратом друг друга");
-}
+// else 
+// {
+// Console.WriteLine($"Числа x={x} и y={y} не являются квадратом друг друга");
+// }
 
  
 
@@ -112,11 +112,37 @@ Console.WriteLine($"Числа x={x} и y={y} не являются квадра
 // 782 -> 8
 // 918 -> 1
 
+Console.Clear();
+Console.WriteLine("Введите трехзначное число x:");
+int x = Convert.ToInt32(Console.ReadLine());
+int x2 = 0;
+if (x>99 && x<1000) 
+{
+    x2=((x-x%10)-(x/100*100))/10; // например число 456, х2=((456-6)-(456/100*100))/10
+    Console.WriteLine($"Вторая цифра {x2}");
+}
+else
+{
+    Console.WriteLine("Введенное число не трехзначное, повторите попытку");
+}
+
+
+
+
+
+
 // Задача 13: Напишите программу, которая выводит третью цифру СЛЕВА заданного числа или сообщает, что третьей цифры нет.
 
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 3267912 -> 6
+
+
+
+
+
+
+
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
